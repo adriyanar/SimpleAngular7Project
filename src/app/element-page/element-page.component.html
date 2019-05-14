@@ -1,0 +1,19 @@
+<div *ngIf="selectedElement">
+  <header class="header">
+    <button class="circleBtns" routerLink="/main"><i class="fas fa-arrow-left"></i></button>
+    <span>{{selectedElement.name}}</span>
+  </header>
+  <div>
+    <ul>
+      <li *ngFor="let item of selectedElement.comments; let odd=odd; let even=even">
+      <div class="commentIcon evenComments" *ngIf="even"></div>
+      <div class="commentIcon oddComments" *ngIf="odd"></div>
+        <span>{{item}}</span>
+      </li>
+    </ul>
+  </div>
+  <footer class="footer">
+    <input type="text" class="commentArea" #newComment placeholder="New comment goes here...">
+    <button class="circleBtns" (click)="addComment(newComment.value); newComment.value = ''"><i class="fas fa-angle-right"></i></button>
+  </footer>
+</div>

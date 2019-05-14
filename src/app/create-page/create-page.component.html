@@ -1,0 +1,10 @@
+<header class="header">
+  <button class="circleBtns" routerLink="/main"><i class="fas fa-arrow-left"></i></button>
+  <span>Create new item</span>
+</header>
+<div>
+  <input type="text" #newItemName placeholder="New item title...">
+  <button class="circleBtns" (click)="addItem(newItemName.value); newItemName.value=''">
+    <i class="fas fa-angle-right"></i>
+  </button>
+</div>

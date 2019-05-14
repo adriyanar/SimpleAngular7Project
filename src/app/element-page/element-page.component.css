@@ -1,0 +1,48 @@
+.footer{
+    height: 110px;
+    background-color: #eaeaea;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+.commentArea{
+    height: 75px;
+    width: 87%;
+    display: inline-block;
+    font-size: 20pt;
+    padding: 0 15px;
+}
+button{
+    width: 80px;
+    height: 80px;
+    margin: 0 15px;
+}
+span{
+    font-size: 25pt;
+    margin-left: 50px;
+}
+li{
+    height: 100px;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-content: center;
+    /* padding: 10px; */
+}
+li div{
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+}
+li span{
+    line-height: 100px;
+}
+.oddComments{
+    background-color: blueviolet;
+}
+.evenComments{
+    background-color: crimson;
+}

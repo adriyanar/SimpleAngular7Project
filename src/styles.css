@@ -1,1 +1,43 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  *:focus{
+    outline: none;
+}
+button{
+    cursor: pointer;
+}
+.header, .itemList{
+    font-family: 'Open Sans';
+    font-weight: bold;
+} 
+.header{
+    height: 180px;
+    background-color: #0E1D3C;
+    color: #fff;
+    padding: 40px 0 0 40px;
+    font-size: 13pt;
+  }
+.header h1{
+    font-size: 42pt;
+}
+.circleBtns{
+    width: 60px;
+    height: 60px;
+    font-weight: bold;
+    font-size: 20pt;
+    background-color: #313464;
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    transition: 0.3s;
+}
+.ircleBtns:hover{
+    background-color: #0E1D3C;
+}
+input::placeholder{
+    color: rgb(61, 61, 61);
+}

@@ -1,0 +1,63 @@
+
+.itemList li{
+    border-bottom: 1px solid lightgray;
+    height: 90px;
+    width: 100vw;
+    font-size: 25pt;
+    color: #2B2F3E;
+    cursor: pointer;
+}
+.itemList li:hover{
+    color: #0E1D3C;
+}
+.itemList li span{
+    display: inline-block;
+    width: 85%;
+    line-height: 90px;
+    padding: 0 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#deleteBtn{
+    width: 15%;
+    height: 100%;
+    border: none;
+    background-color: #D4145A;
+    color: #fff;
+    font-size: 22pt;
+    position: relative;
+    top: -36px;
+    transition: 0.3s;
+}
+#deleteBtn:hover{
+    background-color: #c10449;
+}
+#plusBtn{
+    border: none;
+    border-radius: 50%;
+    background-color: #D4145A;
+    width: 100px;
+    height: 100px;
+    box-shadow: 1px 1px 4px 1px grey;
+    transition: 0.3s;
+}
+#plusBtn:hover{
+    background-color: #c10449; 
+}
+.circleBtns{
+    position: relative;
+    top: -40px;
+    left: 80px;
+}
+.circleBtns:hover{
+    background-color: #0E1D3C;   
+}
+.plusSection{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.fas{
+    color: #F5A8F0;
+}
